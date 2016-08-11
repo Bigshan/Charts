@@ -275,6 +275,19 @@ public class ChartBaseDataSet: NSObject, IChartDataSet
         }
     }
     
+    //lianjia.com added
+    public var valueTextColors: [NSUIColor]
+        {
+        get
+        {
+            return valueColors
+        }
+        set
+        {
+            valueColors  = newValue
+        }
+    }
+    
     /// - returns: the color at the specified index that is used for drawing the values inside the chart. Uses modulus internally.
     public func valueTextColorAt(index: Int) -> NSUIColor
     {

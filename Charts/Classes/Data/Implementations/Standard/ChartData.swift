@@ -841,6 +841,16 @@ public class ChartData: NSObject
         }
     }
     
+    //lianjia.com added
+    public func setValueTextColors(colors: [NSUIColor]!)
+    {
+        for set in dataSets
+        {
+            set.valueTextColors = colors ?? set.valueTextColors
+        }
+        
+    }
+    
     /// Sets the font for all value-labels for all DataSets this data object contains.
     public func setValueFont(font: NSUIFont!)
     {

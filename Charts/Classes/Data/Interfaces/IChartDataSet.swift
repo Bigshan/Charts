@@ -172,6 +172,9 @@ public protocol IChartDataSet
     /// Getting will return the first color in the array.
     var valueTextColor: NSUIColor { get set }
     
+    //lianjia.com added
+    var valueTextColors: [NSUIColor] { get set }
+    
     /// - returns: the color at the specified index that is used for drawing the values inside the chart. Uses modulus internally.
     func valueTextColorAt(index: Int) -> NSUIColor
     
